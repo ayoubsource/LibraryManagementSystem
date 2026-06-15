@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ValueObjects\" />
+    <None Remove="Enums\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Entities\" />
+    <None Remove="Policies\" />
+    <None Remove="Abstractions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ValueObjects\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Policies\" />
+    <Folder Include="Abstractions\" />
+  </ItemGroup>
+</Project>
