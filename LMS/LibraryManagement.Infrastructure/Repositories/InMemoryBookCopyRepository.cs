@@ -10,7 +10,7 @@ namespace LibraryManagement.Infrastructure.Repositories
         public BookCopy? GetFirstAvailableCopy(string isbn) => _copies.Values.FirstOrDefault(c => c.BookId == isbn && c.IsAvailable);
         public int CountAvailableCopies(string isbn) => _copies.Values.Count(c => c.BookId == isbn && c.IsAvailable);
         public void Add(BookCopy copy) => _copies[copy.Id] = copy;
-        public void Update(BookCopy copy) { /* objets en mémoire : rien à faire */ }
+        public void Update(BookCopy copy) { }
     }
 }
 

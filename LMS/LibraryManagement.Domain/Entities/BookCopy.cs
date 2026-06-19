@@ -5,8 +5,8 @@ namespace LibraryManagement.Domain.Entities
 {
 	public sealed class BookCopy
 	{
-        public string Id { get; } // code-barres
-        public string BookId { get; } // ISBN de l'ouvrage
+        public string Id { get; } 
+        public string BookId { get; }
         public CopyStatus Status { get; private set; }
         public bool IsAvailable => Status == CopyStatus.Available;
 
